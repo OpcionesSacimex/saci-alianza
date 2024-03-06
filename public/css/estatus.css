@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F3F4;
+    font-size: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    align-items: center;
+    background-color: #F2F3F4;
+    box-shadow:  5px 5px 10px #B3B4B5, -5px -5px 10px #FFFFFF;
+    display: flex;
+    height: 60px;
+    padding-left: 35px;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
+img {
+    object-fit: cover;
+    width:100%;
+}
+
+section {
+    align-items: center;   
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+h2 {
+    color: #00632F;
+    font-family: 'Presidencia Firme', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h3 {
+    color: #257140;
+    font-family: 'Presidencia Firme', sans-serif;
+    font-size: 1.375em;
+    letter-spacing: 1px;
+}
+
+h4 {
+    color: #257140;
+    font-family: 'Presidencia Fina', sans-serif;
+    font-size: 1.375em;
+}
+
+p {
+    color: #606060;
+    font-family: 'Presidencia Fina', sans-serif;
+    font-size: 1em;
+}
+
+.logo-contenedor {
+    width: 150px;
+}
+
+.solicitud-contenedor {
+    background-color: #F2F3F4;
+    border-radius: 5px;
+    box-shadow:  5px 5px 10px #B3B4B5, -5px -5px 10px #FFFFFF;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: 700px;
+    grid-template-rows: 150px auto;
+}
+
+.info-contenedor {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.seccion-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.seccion-info button {
+    background-color: transparent;
+    border: none;
+    color: #257140;
+    cursor: pointer;
+    font-family: 'Presidencia Firme', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.no-mostrar {
+    display: none;
+}
+
+.medio {
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.final {
+    align-items: flex-end;
+}
+
+.seccion-info span {
+    display: flex;
+    gap: 10px;
+}
+
+.detalle-contenedor {
+    align-items: flex-end;
+    display: flex;
+    height: 0;   
+    justify-content: flex-end;
+    overflow-y: hidden;
+    padding: 0;
+    transition: height .2s, padding .2s;
+}
+
+.mostrar {
+    height: 150px;
+    padding: 20px;
+}
+
+.detalle-subcontenedor {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenedor-doble {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.verde {
+    color: #257140;
+}
+
+.editar-boton {
+    background-color: green;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.borrar-boton {
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.botones-contenedor {
+    display: flex;
+    gap: 20px;
+}
+
+.archivos-boton {
+    background-color: #00632F;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Presidencia Firme', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 9px 18px;
+    text-decoration: none;
+}
+
+.vYENMA {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-height: 800px){
+    section{    
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 700px){
+    .medio {
+        display: none;
+    }
+
+    .seccion-info {
+        width: 50%;
+    }
+
+    .solicitud-contenedor {
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-columns: 350px;
+        grid-template-rows: 150px auto;
+    }
+
+    p {
+        font-size: 0.75em;
+    }
+
+    .detalle-contenedor {
+        height: 150px;
+        padding: 20px;
+    }
+}

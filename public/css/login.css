@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F2F3F4;
+    font-family: 'Presidencia Fina', sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+header{
+    align-items: center;
+    background-color: #F2F3F4;
+    box-shadow:  5px 5px 10px #B3B4B5, -5px -5px 10px #FFFFFF;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 35px;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 90px 0 30px;
+    position: relative;
+}
+
+img{
+    object-fit: cover;
+    width:100%;
+}
+
+h2 {
+    color: #005520;
+    font-size: 1.25em;
+    text-align: right;
+}
+
+input[type="checkbox"]{
+    height: 0;
+    width: 0;
+}
+
+.logo-contenedor{
+    width: 150px;
+}
+
+.form{
+    align-items: center;
+    background-color: #F2F3F4;
+    border-radius: 5px;
+    box-shadow:  5px 5px 10px #B3B4B5, -5px -5px 10px #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.titulo{
+    color: #00632F;
+    font-family: 'Presidencia Firme', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.alerta{
+    color: #B70404;
+    font-size: 0.875em;
+    max-width: 300px;
+    padding-top: 5px;
+}
+
+.btn{
+    background-color: #257140;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 0.875em;
+    padding: 9px 18px;
+    transition: transform .2s;
+}
+
+.btn:hover{
+    transform: scale(105%);
+}
+
+.par{
+    color: #000;
+    font-size: 0.875em;
+}
+
+.lnk-contenedor{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.lnk{
+    color: #005520;
+    cursor: pointer;
+    font-size: 0.875em;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.lnk:hover{
+    color: #F5A200;
+    text-decoration: underline;
+}
+
+.privacidad{
+    font-size: 0.875em;
+    text-align: center;
+    width: 100%;
+}
+
+.link-terminos{
+    color: #005520;
+    cursor: pointer;
+    font-size: 0.875em;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.link-terminos:hover{
+    color: #F5A200;
+    text-decoration: underline;
+}
+
+.label-checkbox{
+    background-color: #F2F3F4;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 20px;
+}
+
+.terminos-contenedor{
+    align-items: center;
+    background-color: rgba(52, 58, 64, 0.6);
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 101;
+}
+
+.terminos-contenedor i {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.375em;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 1501;
+}
+
+.terminos {
+    background-color: #F2F3F4;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding: 50px;
+    text-align: justify;
+    width: 600px;
+    z-index: 1500;
+}
+
+.terminos h4 {
+    padding: 20px 0;
+}
+
+.terminos p {
+    padding-bottom: 10px;
+}
+
+.terminos ol {
+    padding: 10px 20px;
+}
+
+.terminos li {
+    padding-bottom: 10px;
+}
+
+.question-contenedor {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: 16px;
+}
+
+.opacidad {
+    background-color: rgba(52, 58, 64, 0.6);
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 101;
+}
+
+.mostrar {
+    display: flex !important;
+}
+
+.cerrar {
+    cursor: pointer;
+}
+
+.bot-ayuda {
+    animation: aparecerRobot 5s ease-in-out;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    width: 200px;
+}
+
+.kITrbH {
+    align-items: center;
+    color: #005520;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Presidencia Firme', sans-serif;
+    font-size: 0.875em;
+    gap: 10px;
+    left: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    text-decoration: none;
+    top: 90px;
+}
+
+@keyframes aparecerRobot {
+    0% {
+      right: -200px;
+    }
+    94% {
+        right: -200px;
+    }
+    100% {
+      right: 0;
+    }
+}
+
+@media (max-width: 910px){
+    .bot-ayuda {
+        width: 150px;
+    }
+}
+
+@media (max-width: 460px){
+    header{
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 650px){
+    .terminos-contenedor i {
+        color: #000;
+    }
+
+    .bot-ayuda {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .form{
+        border: none;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 370px){
+    .form{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 300px){
+    body {
+        font-size: 16px;
+    }
+}

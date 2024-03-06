@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F2F3F4;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+header {
+  align-items: center;
+  background-color: #F2F3F4;
+  box-shadow:  5px 5px 10px #B3B4B5, -5px -5px 10px #FFFFFF;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 35px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+img {
+  object-fit: cover;
+  width:100%;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 90px 0;
+  width: 100%;
+}
+
+h2 {
+  color: #005520;
+  font-family: 'Presidencia Fina', sans-serif;
+  font-size: 1.25em;
+  text-align: right;
+}
+
+h3 {
+  color: #257140;
+  font-family: 'Presidencia Fina', sans-serif;
+  font-size: 1em;
+}
+
+button {
+  background-color: #F2F3F4;
+  border: 2px solid #005520;
+  border-radius: 5px;
+  color: #005520;
+  cursor: pointer;
+  font-family: 'Presidencia Firme', sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  padding: 9px 18px;
+  transition: transform .3s;
+}
+
+button:hover {
+  transform: scale(105%);
+}
+
+.logo-contenedor {
+  width: 150px;
+}
+
+.botones-contendor {
+  display: flex;
+  gap: 30px;
+}
+
+.tabla-titulo {
+  display: none;
+}
+
+.mostrar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tabla {
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: 100px repeat(8, 1fr);
+  grid-template-rows: auto;
+  width: 1200px;
+}
+.fila-cliente {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: 100px repeat(9, 1fr);
+  grid-template-rows: auto;
+  width: 1200px;
+}
+
+.columna-titulo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.titulo {
+  background-color: #00632F;
+}
+
+.columna-titulo span {
+  color: #FFF;
+  font-family: 'Presidencia Firme', sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.columna {
+  align-items: center;
+  border-bottom: 1px solid #CCC;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.columna span {
+  color: #000;
+  font-family: 'Presidencia Fina', sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.boton {
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  color: #FFF;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  height: 30px;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform .3s;
+  width: 30px;
+}
+
+.boton:hover {
+  transform: scale(105%);
+}
+
+.azul {
+  background-color: blue;
+}
+
+.verde {
+  background-color: green;
+}
+
+.rojo {
+  background-color: red;
+}

@@ -1,0 +1,80 @@
+.inp-contenedor{
+    position: relative;
+}
+
+.inp{
+    background-color: #F2F3F4;
+    border: none;
+    border-bottom: 1px solid #757575;
+    display: block;
+    font-family: 'Presidencia Fina', sans-serif;
+    font-size: 1.25em;
+    outline: none;
+    padding: 10px 10px 10px 5px;
+    text-align: center;
+    width: 300px;
+}
+
+.etq{
+    color: #757575;
+    font-family: 'Presidencia Fina', sans-serif;
+    font-size: 1.25em;
+    left: 5px;
+    pointer-events: none;    
+    position: absolute;
+    top: 10px;
+    transition: 0.2s ease all; 
+    z-index: 1;
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar{
+    display:block;
+    position:relative;
+    width:300px;
+}
+
+.inp:focus ~ .etq, .inp:valid ~ .etq {
+    color: #5C8E64;
+    font-size: 0.875em;
+    top: -20px;
+}
+
+.bar:before, .bar:after{
+    background-color:#5C8E64;
+    bottom:1px;
+    content:'';
+    height:2px;
+    position:absolute;
+    transition:0.2s ease all;
+    width:0;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+.bar:before {
+    left:50%;
+}
+  
+.bar:after {
+    right:50%; 
+}
+  
+.inp:focus ~ .bar:before, .inp:focus ~ .bar:after {
+    width:50%;
+}
+
+@media (max-width: 300px){
+    .inp-contenedor {
+        width: 240px;
+    }
+
+    .inp{
+        width: 240px;
+    }
+
+    .bar{
+        width: 240px;
+    }
+}

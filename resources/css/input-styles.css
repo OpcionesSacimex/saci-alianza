@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+.inp-contenedor{
+    position: relative;
+}
+
+.inp{
+    display: block;
+    width: 300px;
+    padding: 10px 10px 10px 5px;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #757575;
+    outline: none;
+    background-color: #F8FAFC;
+}
+
+.etq{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: #757575; 
+    font-size: 1.25em;
+    font-weight: 500;
+    pointer-events: none;    
+    transition: 0.2s ease all; 
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+    z-index: 20;
+}
+
+.bar{
+    position:relative;
+    display:block;
+    width:300px;
+}
+
+.inp:focus ~ .etq, .inp:valid ~ .etq {
+    top: -20px;
+    font-size: 0.875em;
+    color: #5C8E64;
+}
+
+.bar:before, .bar:after{
+    position:absolute;
+    bottom:1px; 
+    height:2px; 
+    width:0;   
+    background-color:#5C8E64; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    content:'';
+}
+
+.bar:before {
+    left:50%;
+}
+  
+.bar:after {
+    right:50%; 
+}
+  
+.inp:focus ~ .bar:before, .inp:focus ~ .bar:after {
+    width:50%;
+}
+
+@media (max-width: 300px){
+    .inp{
+        width: 80%;
+    }
+
+    .bar{
+        width: 80%;
+    }
+}

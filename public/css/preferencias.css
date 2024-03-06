@@ -1,0 +1,197 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body{
+  background-color: #F2F3F4;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+header{
+  align-items: center;
+  background-color: #F2F3F4;
+  box-shadow:  5px 5px 10px #B3B4B5, -5px -5px 10px #FFFFFF;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 35px;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+
+section{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 90px 0 30px;
+  position: relative;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+}
+
+h2 {
+  color: #005520;
+  font-family: 'Presidencia Fina', sans-serif;
+  font-size: 1.25em;
+  text-align: right;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90%;
+}
+
+.logo-contenedor{
+  width: 150px;
+}
+
+.contenedor-principal {
+  align-items: center;
+  background-color: #F2F3F4;
+  border-radius: 5px;
+  box-shadow:  5px 5px 10px #B3B4B5, -5px -5px 10px #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 0;
+  width: 350px;
+}
+
+.titulo-contenedor {
+  border-bottom: 2px solid #CCC;
+  padding-bottom: 15px;
+  width: 90%;
+}
+
+.titulo-contenedor h3 {
+  color: #00632F;
+  font-family: 'Presidencia Firme', sans-serif;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.inps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-contenedor {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.btn-contenedor button {
+  background-color: #F2F3F4;
+  border: none;
+  color: #257140;
+  cursor: pointer;
+  font-family: 'Presidencia Fina', sans-serif;
+  font-size: 1em;
+  transition: transform .3s;
+}
+
+.btn-contenedor button:hover {
+  transform: scale(105%);
+}
+
+.radio-button{
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  display:flex;
+  flex-direction: row-reverse;
+  font-family: 'Presidencia Fina', sans-serif;
+  font-size: 0.875em;
+  justify-content: flex-end;
+  margin: 10px;
+	width: 100%;
+}
+
+.radio-button input{
+	height: 0;
+	opacity:0;
+	width: 0;
+}
+
+.radio-button span{
+  align-items: center;
+  background-color: #BDBDBD;
+  border-radius: 50%;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin-right: 5px;
+  position: relative;
+	width: 24px;
+}
+
+.radio-button input:checked + span:after{
+  background-color: #FFFFFF;
+  border-radius: 50%;
+	content: "";
+	display: block;
+  height: 8px;
+	width: 8px;
+}
+
+.radio-button input:checked + span {
+	background-color: #84A986;
+}
+
+.radio-button input:disabled + span {
+	background-color: #E5E5E5;
+}
+
+.radio-button span:before{
+  background-color: #84A986;
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  opacity: 0;
+	position: absolute;
+  width: 100%;
+}
+
+.radio-button input:checked + span:before {
+	animation: growAndFade 0.2s ease-out;
+}
+
+@media (max-width: 350px) {
+  body {
+    font-size: 14px;
+  }
+
+  .contenedor-principal {
+    width: 250px;
+  }
+}
+
+@keyframes growAndFade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}

@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #F2F3F4;
+  font-family: 'Presidencia Fina', sans-serif;
+  font-size: 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+header{
+  align-items: center;
+  background-color: #F2F3F4;
+  box-shadow:  8px 8px 16px #B3B6B4,-8px -8px 16px #FFFFFF;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 35px;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+
+section{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 90px 0;
+  position: relative;
+}
+
+img{
+  object-fit: cover;
+  width:100%;
+}
+
+h2 {
+  color: #005520;
+  font-size: 1.25em;
+  text-align: right;
+}
+
+h3 {
+  color: #00632F;
+  font-size: 1.25em;
+}
+
+input {
+  background: #CCCCCC;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  max-width: 55px;
+  padding: 20px;
+}
+
+input:focus {
+  outline: 2px solid #257140;
+}
+
+button {
+  background-color: #00632F;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: 'Presidencia Fina', sans-serif;
+  font-size: 1em;
+  padding: 9px 18px;
+}
+
+.logo-contenedor{
+  width: 150px;
+}
+
+.inp-contenedor {
+  align-items: center;
+  border-radius: 5px;
+  box-shadow:  8px 8px 16px #B3B6B4,-8px -8px 16px #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 350px;
+  justify-content: center;
+  width: 350px;
+}
+
+.inps {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
